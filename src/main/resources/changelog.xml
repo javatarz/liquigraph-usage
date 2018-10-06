@@ -2,11 +2,11 @@
 <changelog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:noNamespaceSchemaLocation="http://www.liquigraph.org/schema/1.0/liquigraph.xsd">
 
-  <changeset id="hello-world" author="you">
+  <changeset id="1.0" author="karun">
     <query>CREATE (n:Sentence {text:'Hello monde!'}) RETURN n</query>
   </changeset>
 
-  <changeset id="hello-world-fixed" author="you">
+  <changeset id="2.0" author="karun">
     <query>MATCH (n:Sentence {text:'Hello monde!'}) SET n.text='Hello world!' RETURN n</query>
   </changeset>
 </changelog>
