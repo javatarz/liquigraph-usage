@@ -10,7 +10,7 @@ import org.neo4j.driver.v1.AuthTokens
 
 case class GraphMigration(private val confFileName : Option[String] = None) {
   private val config = if (confFileName.isDefined) ConfigFactory.load(confFileName.get) else ConfigFactory.load()
-  private val uris = config.getString("neo4j.url").split(",").map(_.trim).head
+  private val uris = config.getString("neo4j.url")
   private val username = config.getString("neo4j.username")
   private val password = config.getString("neo4j.password")
 
